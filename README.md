@@ -10,7 +10,11 @@
 
 - [OpenTelemetry - Internal Metrics](https://opentelemetry.io/docs/collector/internal-telemetry/#lists-of-internal-metrics)
 - [GitHub - OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector/tree/v0.165.0)
-- [GitHub - OpenTelemetry Collector Extension - zPages](https://github.com/open-telemetry/opentelemetry-collector/blob/main/extension/zpagesextension/README.md)
+- [GitHub - Extension - zPages](https://github.com/open-telemetry/opentelemetry-collector/blob/main/extension/zpagesextension/README.md)
+- [GitHub - Receiver - OTLP](https://github.com/open-telemetry/opentelemetry-collector/blob/main/receiver/otlpreceiver/README.md)
+- [GitHub - Extension - Basic Auth](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/basicauthextension)
+- [GitHub - Extension - Bearer Token Auth](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/bearertokenauthextension)
+- [GitHub - Filter Processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/processor/filterprocessor/README.md)
 
 ## LangFuse Public API
 
