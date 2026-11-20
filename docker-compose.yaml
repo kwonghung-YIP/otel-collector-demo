@@ -1,0 +1,84 @@
+services:
+
+  cursor-cli-last9:
+    profiles:
+      - cursor-cli-last9
+    build:
+      context: ./cursor-cli-last9
+    container_name: cursor-cli
+    command: /bin/bash -c "sleep infinity"
+    environment:
+      CURSOR_API_KEY: ${CURSOR_API_KEY:-}
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4318
+      OTEL_EXPORTER_OTLP_TRACES_ENDPOINT: http://otel-collector:4318/v1/traces
+      OTEL_EXPORTER_OTLP_METRICS_ENDPOINT: http://otel-collector:4318/v1/metrics
+      OTEL_EXPORTER_OTLP_LOGS_ENDPOINT: http://otel-collector:4318/v1/logs
+      OTEL_EXPORTER_OTLP_HEADERS: "Authorization=Basic <base64-credentials>"
+      OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE: cumulative
+    volumes:
+      - ./project-settings/cursor/.cursor/agents:/root/.cursor/agents
+      - ./project-settings/cursor/.cursor/commands:/root/.cursor/commands
+      - ./project-settings/cursor/.cursor/skills:/root/.cursor/skills
+      #- $HOME/.cursor/agents:/root/.cursor/agents
+      #- $HOME/.cursor/skills:/root/.cursor/skills
+      #- $HOME/.agent-library:/root/.agent-library
+    networks:
+      - public-internet
+
+  cursor-cli-langguard:
+    profiles:
+      - cursor-cli-langguard
+    build:
+      context: ./cursor-cli-langguard
+    container_name: cursor-cli
+    command: /bin/bash -c "sleep infinity"
+    environment:
+      CURSOR_API_KEY: ${CURSOR_API_KEY:-}
+    volumes:
+      - ./cursor-cli-langguard/otel_config.json:/root/.cursor/hooks/otel_config.json
+      - ./cursor-cli-langguard/otel_hook.sh:/root/.cursor/hooks/otel_hook.sh
+      - ./project-settings/cursor/.cursor/agents:/root/.cursor/agents
+      - ./project-settings/cursor/.cursor/skills:/root/.cursor/skills
+      #- $HOME/.cursor/agents:/root/.cursor/agents
+      #- $HOME/.cursor/skills:/root/.cursor/skills
+      #- $HOME/.agent-library:/root/.agent-library
+    networks:
+      - public-internet
+
+
+  cursor-cli-o11y:
+    profiles:
+      - cursor-cli-o11y
+    build:
+      context: ./cursor-cli-o11y
+    container_name: cursor-cli
+    command: /bin/bash -c "sleep infinity"
+    environment:
+      CURSOR_API_KEY: ${CURSOR_API_KEY:-}
+      IDE_OTEL_HOOK_HOME: /root/.local/share/opentelemetry-hooks
+      IDE_OTEL_CAPTURE_TOOL_INPUT_CONTENT: true
+      IDE_OTEL_CAPTURE_TEXT: true
+      IDE_OTEL_CAPTURE_CONVERSATION_CONTENT: true
+      IDE_OTEL_CAPTURE_USER_IDENTITY: true
+      #IDE_OTEL_LOG_LEVEL: DEBUG
+      #IDE_OTEL_LOG_EVENTS: true
+      #IDE_OTEL_DEBUG_CONSOLE: true
+      #OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4318
+      #OTEL_EXPORTER_OTLP_TRACES_ENDPOINT: http://otel-collector:4318/v1/traces
+      #OTEL_EXPORTER_OTLP_METRICS_ENDPOINT: http://otel-collector:4318/v1/metrics
+      #OTEL_EXPORTER_OTLP_LOGS_ENDPOINT: http://otel-collector:4318/v1/logs
+      #OTEL_EXPORTER_OTLP_HEADERS: "Authorization=Basic <base64-credentials>"
+      #OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE: cumulative
+    volumes:
+      - ./project-settings/cursor/.cursor/agents:/my-project/.cursor/agents
+      - ./project-settings/cursor/.cursor/commands:/my-project/.cursor/commands
+      - ./project-settings/cursor/.cursor/skills:/my-project/.cursor/skills
+      #- $HOME/.cursor/agents:/root/.cursor/agents
+      #- $HOME/.cursor/skills:/root/.cursor/skills
+      #- $HOME/.agent-library:/root/.agent-library
+    networks:
+      - public-internet
+
+networks:
+  public-internet:
+    external: true

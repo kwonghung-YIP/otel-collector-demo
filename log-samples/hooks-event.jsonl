@@ -1,0 +1,470 @@
+{
+  "hook_event_name": "workspaceOpen",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "_logged_at": "2026-11-19T15:48:02Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "model": "default",
+  "is_background_agent": false,
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "sessionStart",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": null,
+  "_logged_at": "2026-11-19T15:48:04Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "39ca678f-b62d-4cd6-8a29-7f75fdd8476c",
+  "model": "default",
+  "prompt": "/fetch-cursor-model-price",
+  "attachments": [],
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "beforeSubmitPrompt",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": null,
+  "_logged_at": "2026-11-19T15:48:29Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "39ca678f-b62d-4cd6-8a29-7f75fdd8476c",
+  "model": "default",
+  "text": "The user wants me to execute the fetch-cursor-model-price command.\n\nI will launch the `cursor-model-pricing` subagent via the Task tool to fetch the pricing documentation.",
+  "duration_ms": 1018,
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "afterAgentThought",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": null,
+  "_logged_at": "2026-11-19T15:48:32Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "39ca678f-b62d-4cd6-8a29-7f75fdd8476c-0-7i78",
+  "model": "composer-2.5-fast",
+  "model_id": "composer-2.5",
+  "model_params": [
+    {
+      "id": "speed",
+      "value": "fast"
+    }
+  ],
+  "text": "The user wants me to execute the fetch-cursor-model-price command.\n\nI will launch the `cursor-model-pricing` subagent via the Task tool to fetch the pricing documentation.",
+  "duration_ms": 1018,
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "afterAgentThought",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": null,
+  "_logged_at": "2026-11-19T15:48:32Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "39ca678f-b62d-4cd6-8a29-7f75fdd8476c",
+  "model": "",
+  "tool_name": "Task",
+  "tool_input": {
+    "description": "Fetch Cursor model pricing JSON",
+    "prompt": "Execute your documented workflow: fetch the official Cursor models-and-pricing documentation, parse all pricing tables, and produce one JSON document that validates against the CursorPricingTable schema in your agent file.",
+    "model": "inherit",
+    "subagent_type": "cursor-model-pricing",
+    "run_in_background": false
+  },
+  "tool_use_id": "call-44a9b14d-8735-47c3-9153-8f1d69eceabf-composer_call_2H1BCZb0\nfc_e8e2f10f-3f87-9437-9c9c-f982404385d9_0",
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "preToolUse",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": null,
+  "_logged_at": "2026-11-19T15:48:32Z"
+}
+{
+  "conversation_id": "85170778-1652-4676-bd56-8cbf41a86d11",
+  "generation_id": "6651c9fa-2b79-467f-ae0b-d12bf4800e90",
+  "model": "claude-haiku-5-5",
+  "tool_name": "WebFetch",
+  "tool_input": {
+    "url": "https://cursor.com/docs/models-and-pricing"
+  },
+  "tool_use_id": "toolu_01Bj7tDFkn4wuXWmyTcv7XaH",
+  "session_id": "85170778-1652-4676-bd56-8cbf41a86d11",
+  "hook_event_name": "preToolUse",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": null,
+  "_logged_at": "2026-11-19T15:48:36Z"
+}
+{
+  "conversation_id": "85170778-1652-4676-bd56-8cbf41a86d11",
+  "generation_id": "6651c9fa-2b79-467f-ae0b-d12bf4800e90-0-77es",
+  "model": "claude-haiku-5-5",
+  "text": "I need to pull the Cursor docs, which is a read-only fetch, so the Ask mode restriction doesn't block it. I'll go ahead and run WebFetch on them.\n\n",
+  "duration_ms": 4,
+  "session_id": "85170778-1652-4676-bd56-8cbf41a86d11",
+  "hook_event_name": "afterAgentThought",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": null,
+  "_logged_at": "2026-11-19T15:48:36Z"
+}
+{
+  "conversation_id": "85170778-1652-4676-bd56-8cbf41a86d11",
+  "generation_id": "6651c9fa-2b79-467f-ae0b-d12bf4800e90",
+  "model": "claude-haiku-5-5",
+  "tool_name": "WebFetch",
+  "tool_input": {
+    "url": "https://cursor.com/docs/models-and-pricing"
+  },
+  "tool_output": "{\"status\":\"success\",\"url\":\"https://cursor.com/docs/models-and-pricing\",\"content_length\":23010,\"content\":\"# Models & Pricing\\n\\nCursor supports frontier models from OpenAI, Anthropic, Google, SpaceXSI, and more. Cursor is sold as part of The X Subscription, one subscription for Grok, Cursor, and X. Paid plans include a weekly pool of usage for Cursor models, shared across Grok and Cursor. Third-party models aren't included; on Premium and above you can use them at API list price, paid from prepaid credit.\\n\\nOn Pro, Pro+, Ultra, Start, or a Teams Standard or Premium seat? Those are legacy Cursor plans. They keep working as they are, with two monthly usage pools and on-demand usage.\\n\\n## Plans\\n\\n| Plan | Price | Included usage | Third-party models |\\n| --- | --- | --- | --- |\\n| Free | $0 | Limited | Not available |\\n| Plus | $8/mo | Base | Not available |\\n| Premium | $30/mo | 4x Plus | API list price, from prepaid credit |\\n| Super | $100/mo | 15x Plus | API list price, from prepaid credit |\\n| Ultra | $200/mo | 50x Plus | API list price, from prepaid credit |\\n| Teams | $30, $100, or $200 per seat/mo | Matches the seat's tier | API list price plus the Cursor Token Rate on eligible models |\\n| Enterprise | Custom | Pooled | API list price plus the Cursor Token Rate on eligible models |\\n\\nAnnual billing is available at $80/yr for Plus, $300/yr for Premium, $1,000/yr for Super, and $2,000/yr for Ultra. Prices exclude tax.\\n\\n- Free. Agent and Chat with limited usage.\\n- Plus. Agent with Cursor's own models (Grok 4.7, Grok 4.6, Grok 4.5, and Composer 2.5) at fixed settings: Fast is off, effort is medium, and Grok 4.7 uses the 256k context window. Also Grok Chat, Voice, Imagine, Build, and Grok API access. No Auto, Cloud Agents, Automations, Bugbot, Origin, third-party models, or your own API keys.\\n- Premium. Everything in Plus, with 4x the usage. Adds Cloud Agents and Automations, code hosting on Origin, code review with Bugbot, third-party models at API list price, and Grok Bot.\\n- Super. Everything in Premium, with 15x Plus usage and priority model access at peak times.\\n- Ultra. Everything in Super, with 50x Plus usage and earliest access to new products and models.\\n\\nPremium suits new Agent users, Super suits daily Agent users, and Ultra suits power users running several agents or Automations. See cursor.com/pricing for the full feature comparison, including Grok and X benefits.\\n\\n## Included usage\\n\\nEach paid plan includes one pool of usage for Cursor models. The pool is shared across everything on your subscription: Agent in the editor, CLI, Cloud Agents, Grok Bot, and the Grok apps. It refreshes weekly, so one heavy day doesn't use up your month.\\n\\nDifferent models draw from the pool at different rates. Your remaining usage and next reset date are shown in your editor settings and under Usage at grok.com/dashboard.\\n\\n### Cursor models\\n\\nThe pool covers Grok 4.7, Grok 4.6, Grok 4.5, and Composer 2.5. On Teams and Enterprise plans, Cursor Router picks among Cursor models and third-party models for each Balance or Intelligence request based on your optimization mode; a third-party route bills as third-party usage.\\n\\n| Model | Provider | Input | Cache write | Cache read | Output | US data residency | Notes |\\n| --- | --- | --- | --- | --- | --- | --- | --- |\\n| Grok 4.7 | Cursor | $2 | - | $0.5 | $6 | Yes | Jointly trained by Cursor and SpaceXAI; Long context (>256k input tokens) is billed at 2x standard rates, up to 500k; Fast mode is available at 2x pricing; Fast mode for long context (>256k) is billed at 3x standard rates |\\n| Grok 4.7 (Fast) | Cursor | $4 | - | $1 | $12 | Yes | Jointly trained by Cursor and SpaceXAI; Long context (>256k input tokens) is billed at 2x standard rates, up to 500k; Fast mode is available at 2x pricing; Fast mode for long context (>256k) is billed at 3x standard rates |\\n| Grok 4.7 500k | Cursor | $4 | - | $1 | $12 | Yes | Jointly trained by Cursor and SpaceXAI; Long context (>256k input tokens) is billed at 2x standard rates, up to 500k; Fast mode is available at 2x pricing; Fast mode for long context (>256k) is billed at 3x standard rates |\\n| Grok 4.7 500k (Fast) | Cursor | $6 | - | $1.5 | $18 | Yes | Jointly trained by Cursor and SpaceXAI; Long context (>256k input tokens) is billed at 2x standard rates, up to 500k; Fast mode is available at 2x pricing; Fast mode for long context (>256k) is billed at 3x standard rates |\\n| Grok 4.6 | Cursor | $2 | - | $0.5 | $6 | Yes | Jointly trained by Cursor and SpaceXAI |\\n| Grok 4.6 (Fast) | Cursor | $4 | - | $1 | $12 | Yes | Jointly trained by Cursor and SpaceXAI |\\n| Grok 4.5 | Cursor | $2 | - | $0.5 | $6 | Yes | Jointly trained by Cursor and SpaceXAI |\\n| Grok 4.5 (Fast) | Cursor | $4 | - | $1 | $18 | Yes | Jointly trained by Cursor and SpaceXAI |\\n| Composer 2.5 | Cursor | $0.5 | - | $0.2 | $2.5 | Yes | - |\\n| Composer 2.5 (Fast) | Cursor | $3 | - | $0.5 | $15 | Yes | - |\\n\\nThese rates apply when you buy additional usage beyond the weekly pool.\\n\\n## Third-party models\\n\\nThird-party models like Claude, GPT, and Gemini aren't part of the included pool. On Premium and above, they're available in Cursor at the model's API list price from the first request, paid from your prepaid credit. Plus and Free don't include third-party models.\\n\\n### Model pricing\\n\\nAll prices are per million tokens:\\n\\n| Model | Provider | Input | Cache write | Cache read | Output | US data residency | Notes |\\n| --- | --- | --- | --- | --- | --- | --- | --- |\\n| Claude 4 Sonnet | Anthropic | $3 | $3.75 | $0.3 | $15 | No | Hidden by default; Thinking variant counts as 2 requests in legacy pricing |\\n| Claude 4 Sonnet 1M | Anthropic | $6 | $7.5 | $0.6 | $22.5 | No | Hidden by default; Thinking variant counts as 2 requests in legacy pricing; This model can be very expensive due to the large context window; The cost is 2x when the input exceeds 200k tokens |\\n| Claude 4.5 Haiku | Anthropic | $1 | $1.25 | $0.1 | $5 | No | Hidden by default; Bedrock/Vertex: regional endpoints +10% surcharge; Cache: writes 1.25x, reads 0.1x |\\n| Claude 4.5 Opus | Anthropic | $5 | $6.25 | $0.5 | $25 | No | Hidden by default; Requires Max Mode on legacy request-based plans |\\n| Claude 4.5 Sonnet | Anthropic | $3 | $3.75 | $0.3 | $15 | No | Hidden by default; Requires Max Mode on legacy request-based plans; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge) |\\n| Claude 4.6 Opus | Anthropic | $5 | $6.25 | $0.5 | $25 | Yes | Hidden by default; Requires Max Mode on legacy request-based plans; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge) |\\n| Claude 4.6 Sonnet | Anthropic | $3 | $3.75 | $0.3 | $15 | Yes | Hidden by default; Requires Max Mode on legacy request-based plans; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge) |\\n| Claude 4.7 Opus | Anthropic | $5 | $6.25 | $0.5 | $25 | Yes | Hidden by default; Requires Max Mode on legacy request-based plans; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge) |\\n| Claude Fable 5 | Anthropic | $10 | $12.5 | $1 | $50 | Yes | Hidden by default; Requires data retention approval for Enterprise customers, Teams and individual customers with Privacy Mode enabled; Anthropic stores agent input and output data for harm-prevention processes; this data is not used to train or improve Anthropic models or products; Requests that trip a security guardrail are automatically routed to Claude Opus; About 2x the cost of Claude Opus 5; Requires Max Mode on legacy request-based plans |\\n| Claude Fable 5.1 | Anthropic | $10 | $12.5 | $0.25 | $50 | Yes | Hidden by default; Requires data retention approval for Enterprise customers, Teams and individual customers with Privacy Mode enabled; Anthropic stores agent input and output data for harm-prevention processes; this data is not used to train or improve Anthropic models or products; Requests that trip a security guardrail are automatically routed to Claude Opus; Prompt-cache reads are $0.25/M, 75% below the standard cache-read rate; About 2.5x the cost of Claude Opus 5.5 on input and output; Requires Max Mode on legacy request-based plans |\\n| Claude Fable 5.2 | Anthropic | $8 | $10 | $0.2 | $40 | Yes | Requires data retention approval for Enterprise customers, Teams and individual customers with Privacy Mode enabled; Anthropic stores agent input and output data for harm-prevention processes; this data is not used to train or improve Anthropic models or products; Requests that trip a security guardrail are automatically routed to Claude Opus; 20% cheaper than Claude Fable 5.1 on input and output; About 2x the cost of Claude Opus 5.5 on input and output; Requires Max Mode on legacy request-based plans |\\n| Claude Haiku 5.5 | Anthropic | $0.1 | $0.125 | $0.01 | $0.5 | Yes | Requires Max Mode on legacy request-based plans; Requests above 100k input tokens bill at 5x the standard rates ($0.50/M input, $0.625/M cache write, $0.05/M cache read, $2.50/M output); 90% cheaper than Claude 4.5 Haiku on input and output for requests up to 100k input tokens |\\n| Claude Opus 4.7 (fast mode) | Anthropic | $30 | $37.5 | $3 | $150 | Yes | Hidden by default; Requires Max Mode on legacy request-based plans; Limited research preview; Up to 1M tokens with extended context at the same per-token rates as shorter context |\\n| Claude Opus 4.8 | Anthropic | $5 | $6.25 | $0.5 | $25 | Yes | Hidden by default; Requires Max Mode on legacy request-based plans; Fast mode (`claude-opus-4-8-fast`) requires Max Mode on legacy request-based plans; Fast mode is 3x lower per-token pricing than Opus 4.7 fast mode; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge) |\\n| Claude Opus 5 | Anthropic | $5 | $6.25 | $0.5 | $25 | Yes | Hidden by default; Requires Max Mode on legacy request-based plans; Fast mode (`claude-opus-5-fast`) requires Max Mode on legacy request-based plans; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge) |\\n| Claude Opus 5.5 | Anthropic | $4 | $5 | $0.2 | $20 | Yes | Requires Max Mode on legacy request-based plans; Fast mode (`claude-opus-5-5-fast`) requires Max Mode on legacy request-based plans; 20% cheaper than Claude Opus 5 on input and output; Prompt-cache reads are $0.20/M (0.05x input), down from 0.10x input on Claude Opus 5; Regional and US-only endpoints are priced 10% higher ($ 4.40/M input, $22/M output); Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge) |\\n| Claude Sonnet 5 | Anthropic | $2 | $2.5 | $0.2 | $10 | Yes | Hidden by default; Requires Max Mode on legacy request-based plans; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge); Uses an updated tokenizer, so the same input can map to more tokens |\\n| Claude Sonnet 5.5 | Anthropic | $2 | $2.5 | $0.1 | $10 | Yes | Requires Max Mode on legacy request-based plans; Same input and output rates as Claude Sonnet 5, with cache reads at $0.10/M instead of $0.20/M; US-only endpoints are priced 10% higher ($ 2.20/M input, $11/M output); Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge) |\\n| DeepSeek V4.1 Flash 1017 | DeepSeek | $0.3 | - | $0.006 | $1.2 | Yes | Hidden by default |\\n| Gemini 2.5 Flash | Google | $0.3 | - | $0.03 | $2.5 | Yes | Hidden by default |\\n| Gemini 3 Flash | Google | $0.5 | - | $0.05 | $3 | No | Hidden by default |\\n| Gemini 3 Pro | Google | $2 | - | $0.2 | $12 | No | Hidden by default |\\n| Gemini 3 Pro Image Preview | Google | $2 | - | $0.2 | $12 | No | Hidden by default; Native image generation model optimized for speed, flexibility, and contextual understanding; Text input and output priced the same as Gemini 3 Pro; Image output: $120/1M tokens (\\\\~$ 0.134 per 1K/2K image, ~$0.24 per 4K image); Preview models may change before becoming stable and have more restrictive rate limits |\\n| Gemini 3.1 Pro | Google | $2 | - | $0.2 | $12 | No | - |\\n| Gemini 3.5 Flash | Google | $1.5 | - | $0.15 | $9 | Yes | Hidden by default |\\n| Gemini 3.5 Flash Lite | Google | $0.3 | - | $0.03 | $2.5 | Yes | Hidden by default; Used only for the Auto-review classifier. It is not selectable as a chat or agent model |\\n| Gemini 3.6 Flash | Google | $1.5 | - | $0.15 | $7.5 | No | Hidden by default |\\n| Gemini 3.7 Flash | Google | $0.75 | - | $0.075 | $3.75 | No | Hidden by default |\\n| Gemini 3.8 Flash | Google | $0.75 | - | $0.075 | $3.75 | Yes | - |\\n| Gemini 4 Argon | Google | $2 | - | $0.1 | $10 | Yes | - |\\n| Gemini 4 Carbon | Google | $2 | - | $0.1 | $10 | Yes | Introductory pricing through November 30, 2026. From December 1, 2026: $4 input, $0.20 cache read, $20 output per 1M tokens |\\n| Gemini 4 Hydrogen | Google | $1.5 | - | $0.075 | $7.5 | Yes | - |\\n| Gemini 4 Neon | Google | $3 | - | $0.15 | $15 | Yes | - |\\n| GLM 5.2 | Z.ai | $1.4 | - | $0.26 | $4.4 | Yes | Hidden by default |\\n| GLM 5.3 | Z.ai | $1.4 | - | $0.26 | $4.4 | Yes | Hidden by default; Same per-token rates as GLM 5.2 |\\n| GLM 5.3 Flash | Z.ai | $0.15 | - | $0.029 | $0.5 | Yes | Hidden by default |\\n| GPT-5 | OpenAI | $1.25 | - | $0.125 | $10 | Yes | Hidden by default; Agentic and reasoning capabilities; Available reasoning effort variant is gpt-5-high |\\n| GPT-5 Fast | OpenAI | $2.5 | - | $0.25 | $20 | Yes | Hidden by default; Faster speed but 2x price; Available reasoning effort variants are gpt-5-high-fast, gpt-5-low-fast |\\n| GPT-5 Mini | OpenAI | $0.25 | - | $0.025 | $2 | No | Hidden by default |\\n| GPT-5-Codex | OpenAI | $1.25 | - | $0.125 | $10 | Yes | Hidden by default; Agentic and reasoning capabilities |\\n| GPT-5.1 Codex | OpenAI | $1.25 | - | $0.125 | $10 | Yes | Hidden by default; Agentic and reasoning capabilities |\\n| GPT-5.1 Codex Max | OpenAI | $1.25 | - | $0.125 | $10 | Yes | Hidden by default |\\n| GPT-5.1 Codex Mini | OpenAI | $0.25 | - | $0.025 | $2 | Yes | Hidden by default; Agentic and reasoning capabilities; 4x rate limits compared to GPT-5.1 Codex |\\n| GPT-5.2 | OpenAI | $1.75 | - | $0.175 | $14 | Yes | Hidden by default; Agentic and reasoning capabilities; Available reasoning effort variant is gpt-5.2-high |\\n| GPT-5.2 Codex | OpenAI | $1.75 | - | $0.175 | $14 | Yes | Hidden by default; Agentic and reasoning capabilities |\\n| GPT-5.3 Codex | OpenAI | $1.75 | - | $0.175 | $14 | No | Hidden by default; Requires Max Mode on legacy request-based plans; Agentic and reasoning capabilities; Available reasoning effort variant is gpt-5.3-codex-high |\\n| GPT-5.4 | OpenAI | $2.5 | - | $0.25 | $15 | Yes | Hidden by default; Requires Max Mode on legacy request-based plans; Agentic and reasoning capabilities; 90% discount on cached input tokens; Fast mode is 15% faster with 2x pricing; Long context supports up to 1M tokens with 2x input pricing |\\n| GPT-5.4 Mini | OpenAI | $0.75 | - | $0.075 | $4.5 | Yes | Hidden by default; Smaller, faster variant of GPT-5.4; 90% discount on cached input tokens |\\n| GPT-5.4 Nano | OpenAI | $0.2 | - | $0.02 | $1.25 | Yes | Hidden by default; Smallest GPT-5.4 variant, optimized for cost; 90% discount on cached input tokens |\\n| GPT-5.5 | OpenAI | $5 | - | $0.5 | $30 | Yes | Hidden by default; Requires Max Mode on legacy request-based plans; Agentic and reasoning capabilities; More token-efficient than GPT-5.4 on comparable tasks; Improved persistence on long-running tasks; Fast mode is available at higher rates; Long context supports up to 1M tokens with 2x input pricing |\\n| GPT-5.6 Luna | OpenAI | $0.2 | $0.25 | $0.02 | $1.2 | Yes | Requires Max Mode on legacy request-based plans; Smallest GPT-5.6 variant, optimized for cost and speed; Agentic and reasoning capabilities; Fast mode is available at 2x pricing; Long context supports up to 1M tokens with 2x input pricing; Fast mode is available for long context (>272k) at 2x Fast input pricing; Cache writes are billed at 1.25x the uncached input rate |\\n| GPT-5.6 Sol | OpenAI | $4 | $5 | $0.4 | $20 | Yes | Requires Max Mode on legacy request-based plans; Agentic and reasoning capabilities; Fast mode is available at 2x pricing; Long context supports up to 1M tokens with 2x input pricing; Fast mode is available for long context (>272k) at 2x Fast input pricing; Cache writes are billed at 1.25x the uncached input rate; Promotional pricing through November 21, 2026 |\\n| GPT-5.6 Terra | OpenAI | $2 | $2.5 | $0.2 | $12 | Yes | Requires Max Mode on legacy request-based plans; Mid-tier GPT-5.6 variant between Sol and Luna; Agentic and reasoning capabilities; Fast mode is available at 2x pricing; Long context supports up to 1M tokens with 2x input pricing; Fast mode is available for long context (>272k) at 2x Fast input pricing; Cache writes are billed at 1.25x the uncached input rate |\\n| Kimi K2.7 Code | Moonshot | $0.95 | - | $0.19 | $4 | Yes | Hidden by default |\\n| Kimi K3 | Moonshot | $3 | - | $0.3 | $15 | Yes | Hidden by default; Requires Max Mode on legacy request-based plans; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge); No separate cache-write fee |\\n| Muse Spark 1.3 | Meta | $1.25 | - | $0.15 | $4.25 | No | Hidden by default; Requires Max Mode on legacy request-based plans; Up to 1M tokens in Max Mode at the same per-token rates (no long-context surcharge); Cached input is billed at $0.15 per million tokens with no separate cache-write charge |\\n| Muse Wonder | Meta | $4 | - | $0.2 | $20 | No | Up to 1M tokens in Max Mode at the same per-token rates (no long-context surcharge); Cached input is billed at $0.20 per million tokens with no separate cache-write charge |\\n\\nOpting in to regional data residency incurs a 10% uplift on Model pricing for eligible Models. See Privacy and Data Governance for details on supported regions, Models, functions and data residency policies.\\n\\n## Top-ups and spending caps\\n\\nTop-ups add prepaid credit to your subscription. Credit pays for two kinds of additional usage:\\n\\n- Third-party models in Cursor, from the first request, at API list price.\\n- Cursor models beyond your weekly pool, at the rates in the table above.\\n\\nBuy credit when you choose, or turn on Auto Top-up to refill when your balance drops below a threshold you set. A monthly additional usage limit caps how much paid additional usage you can consume each month, regardless of how much credit you hold. Manage all three under Additional usage credits at grok.com/dashboard/billing. On Teams, admins manage a shared prepaid balance and one cap for the whole team.\\n\\n### What happens when I reach my limit?\\n\\nWhen your weekly pool runs out, you can:\\n\\n- Wait for the reset. Your pool refreshes weekly.\\n- Use prepaid credit. Keep working at the same per-model rates with top-ups or Auto Top-up.\\n- Upgrade your plan. Move to a higher tier for a larger weekly pool.\\n\\nRequests are never downgraded in quality or speed. See Usage and limits for how to check usage and what the limit notification means.\\n\\n## Teams\\n\\nTeams are priced per seat. Each member gets a Premium, Super, or Ultra seat at the same price and with the same weekly usage as the matching individual plan, and you can mix seat tiers on one team. Plus isn't available for teams.\\n\\nTeam plans add centralized billing and administration, a team marketplace for internal rules, skills, and plugins, usage analytics, team-wide privacy mode enforcement, custom Chat data retention, and SAML/OIDC SSO. Enterprise adds pooled usage across Grok and Cursor, invoicing, SCIM, granular spend controls, and advanced security controls.\\n\\nWe recommend Teams for any customer that is happy self-serving and Enterprise for customers that need priority support, pooled usage, invoicing, SCIM, or advanced security controls. Learn more about Team pricing.\\n\\n## Cursor Token Rate\\n\\nOn Teams and Enterprise plans, eligible third-party model requests include a Cursor Token Rate of $0.25 per million tokens. This rate applies on top of model API pricing for additional usage and BYOK usage. Individual plans don't pay it.\\n\\nThe rate applies when you select an eligible third-party model directly, and when Cursor Router (Balance or Intelligence) routes to one. It applies to input tokens, output tokens, and cached tokens.\\n\\nThe Cursor Token Rate does not apply to Cursor models, including Grok and Composer, or to Cost mode requests.\\n\\nThe Cursor Token Rate also does not apply to third-party models whose cache-read price is strictly below $0.10 per million tokens across every pricing tier. This exemption also applies when you use your own API key.\\n\\n## Auto modes\\n\\nAuto has three modes: Cost, Balance, and Intelligence. See Cursor Router for how these modes work.\\n\\nCost mode (classic Auto) bills as a Cursor-model request and draws from your weekly pool whatever model serves it. On Teams and Enterprise with Cursor Router on, Balance and Intelligence bill at the routed model's list price: a route to a Cursor model draws from the weekly pool, and a route to a third-party model is third-party usage paid from prepaid credit. Individual plans have Cost mode only. See Model pricing for per-model rates. On Teams and Enterprise, a Balance or Intelligence route to a third-party model also incurs the Cursor Token Rate unless its cache-read price is strictly below $0.10 per million tokens across every pricing tier. Cost mode does not.\\n\\n## Legacy Cursor plans\\n\\nHobby, Start, Pro, Pro+, Ultra, and Teams Standard and Premium seats continue for existing customers. They include two monthly usage pools, Cursor Models and Other Models, and use on-demand usage instead of top-ups. See Legacy Cursor plans for how they work and how they map to The X Subscription.\\n\\n## Legacy request-based pricing\\n\\n### Max Mode\\n\\nMax Mode is available only on legacy request-based plans. It extends a model's context window beyond the default limit and is billed at the model's API rate plus 20%. See Max Mode on legacy plans for details.\\n\\n## FAQ\\n\\n### Is my weekly pool shared with Grok?\\n\\nYes. Grok Chat, Imagine, Voice, Grok Bot, and Cursor all draw from the same weekly pool for Cursor models. Usage rates vary by product. The Grok API is billed separately and doesn't draw from the pool.\\n\\n### Can I use third-party models on Plus?\\n\\nNo. Plus includes Cursor's own models only (Grok 4.7, Grok 4.6, Grok 4.5, and Composer 2.5), at fixed settings. Upgrade to Premium or higher to use third-party models, billed at API list price from prepaid credit, and to choose Fast mode and effort levels.\\n\\n### Which models skip the Cursor Token Rate?\\n\\nOn Teams and Enterprise, third-party models whose cache-read price is strictly below $0.10 per million tokens across every pricing tier are exempt, including when you use your own API key. Cursor models and Cost mode requests are also exempt. Individual plans don't pay the rate.\\n\\n### Where are models hosted?\\n\\nModels are hosted by the model provider, a trusted partner, or Cursor. See our list of sub-processors for details.\\n\\n### Where can I find pricing terms?\\n\\nFor enterprise pricing details, billing terms, and fee calculations, see the Pricing Policy.\\n\\n---\\n\\n## Sitemap\\n\\nOverview of all docs pages\"}",
+  "duration": 1360,
+  "tool_use_id": "toolu_01Bj7tDFkn4wuXWmyTcv7XaH",
+  "session_id": "85170778-1652-4676-bd56-8cbf41a86d11",
+  "hook_event_name": "postToolUse",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/subagents/85170778-1652-4676-bd56-8cbf41a86d11.jsonl",
+  "_logged_at": "2026-11-19T15:48:37Z"
+}
+{
+  "conversation_id": "85170778-1652-4676-bd56-8cbf41a86d11",
+  "generation_id": "6651c9fa-2b79-467f-ae0b-d12bf4800e90-1-9xgz",
+  "model": "claude-haiku-5-5",
+  "text": "I've got the page content now, and the next step is producing the JSON from it. The page doesn't match the anchors I expected, but I'll just report what's actually there, treating the fetched text as data rather than instructions.\n\nI'm laying out the JSON structure now: metadata, tiers, and metered models. For the Teams plan, which has three per-seat price points, I'm leaning toward separate entries for each seat level so the pricing stays accurate, and I'm working out the effective monthly figures for the annual billing options.\n\nI'm settling the usage allowances next: Free and Enterprise get text values since they aren't multipliers, while Plus through Ultra take their multiplier strings, and the Teams seats map onto the Premium, Super, and Ultra multipliers.\n\nI'm leaving Enterprise's priority-access field out, since the page doesn't say anything about it. For Teams, the Super and Ultra seats get priority access and the Premium seat doesn't. Third-party usage gets no included credit on any tier, so those amounts stay at zero throughout.\n\nI'm working through the feature flags for each tier: cloud agents are on for Premium and above, and I'm weighing whether Enterprise should get them too, since the page only ties third-party model access to that plan.\n\nI'm checking which plans get cloud agents and third-party model access, and deciding on the Enterprise values for both since the page only implies them. Premium through Ultra get third-party models, and Bugbot code review is on for Premium and above.\n\nI'm mapping out the Premium, Super, and Ultra allowances for the Teams seats, with Enterprise and admin controls still to decide, and sketching which features belong to each plan.\n\nI'm weighing whether to add a separate cache-write field for the metered models, since the schema doesn't have one even though the page lists that column.\n\nI'm weighing whether to leave out the cache-write column, since the schema has no property for it, and I'm checking that the model entries should use the display names as their IDs rather than invented slugs.\n\nI'm settling on the model IDs now: rather than inventing slugs the page doesn't give, I'll use the display names directly and flag that in my notes. Cursor's own models are marked as native pool, while third-party models are not. Providers are labelled by company, so Cursor, Anthropic, OpenAI, Google, DeepSeek, Z.ai, Moonshot, and Meta each get their own name.\n\nI'm settling the provider labels and cache-read values for the metered models now, and I'm about to list out all of them.\n\nI'm now going through the Cursor-native model rows, starting with the Grok 4.7 variants and their input, cache, and output rates, then moving on to the Grok 4.6, Grok 4.5, and Composer 2.5 entries.\n\nI'm now listing the third-party models with their providers and rates, starting with the Claude 4 Sonnet variants and running through the Claude 4.5 and 4.6 entries.\n\nI'm continuing through the third-party model rows, which are Anthropic's Claude variants: Claude 4.7 Opus, Claude Fable 5 and its 5.1 and 5.2 versions, Claude Haiku 5.5, the fast-mode Opus 4.7 entry, and Opus 4.8 and Opus 5.\n\nNow I'm going through the third-party Gemini rows, which are priced at lower input rates than the Claude models.\n\nI'm listing the remaining third-party Gemini models, including the Gemini 3.5 and 3.6 Flash variants and the Gemini 4 entries, with their input, cache, and output rates.\n\nI'm continuing through the remaining third-party rows, which are the Gemini 4 Hydrogen and Neon entries, the Z.ai GLM models, and the OpenAI GPT-5 variants, and I'm noting their input, cache, and output rates.\n\nI'm continuing through the GPT-5 rows, which are priced in the same pattern as the Codex and Mini variants, and I'm recording each one's input, cache, and output rates.\n\nI'm going through the rest of the metered model rows, the GPT-5.6 Luna, Sol, and Terra entries, then the Kimi K2.7 Code and K3 models and the two Meta Muse entries, with their input, cache, and output rates.\n\nI'm now setting up the tier entries, starting with Free, which has no monthly or annual billing fee and gets a limited native-pool allowance with zero third-party credits and no priority access.\n\nI'm wrapping up the Free tier's usage values, then splitting Teams into three seat levels (Premium, Super, Ultra), each with its own multiplier and priority-access setting. For Enterprise I'm leaving the pool multiplier as \"pooled\" and not guessing at any third-party credit figure, since the page doesn't state one.\n\nI'm now writing out the feature flags for each plan, starting with Free and Plus, which have no cloud agents, third-party model access, or Bugbot.\n\nI'm now defining the Teams seats' extra perks, like centralized billing and a team marketplace for internal rules and plugins, and I'm deciding which ones to list alongside the admin features.\n\nI'm settling the Enterprise entry now: I'm leaning toward marking cloud agents and Bugbot as on, and third-party model access as on too, since the page describes pooled usage and invoicing for that plan.\n\nNow I'm checking the metadata fields: a verified date, USD as the currency, and the pricing docs URL as the source.\n\nWorking out the annual prices per month: Plus comes to about $6.67, Premium $25, Super about $83.33, and Ultra about $166.67. The Teams seats have no annual figure on the page, so those stay null, and their monthly prices are $30, $100, and $200. Enterprise gets a custom billing cycle, and I'll keep the default monthly cycle for the rest.\n\nI'm now deciding whether to add the notes after the JSON, since the caveats about dropped columns and derived values seem worth keeping short.\n\nChecking the trailing decimal values and then the JSON's structure is complete.\n\n",
+  "duration_ms": 26548,
+  "session_id": "85170778-1652-4676-bd56-8cbf41a86d11",
+  "hook_event_name": "afterAgentThought",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/subagents/85170778-1652-4676-bd56-8cbf41a86d11.jsonl",
+  "_logged_at": "2026-11-19T15:49:07Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "39ca678f-b62d-4cd6-8a29-7f75fdd8476c",
+  "model": "claude-haiku-5-5-thinking-high",
+  "tool_name": "Task",
+  "tool_input": {
+    "description": "Fetch Cursor model pricing JSON",
+    "prompt": "Execute your documented workflow: fetch the official Cursor models-and-pricing documentation, parse all pricing tables, and produce one JSON document that validates against the CursorPricingTable schema in your agent file.",
+    "model": "inherit",
+    "subagent_type": "cursor-model-pricing",
+    "run_in_background": false
+  },
+  "tool_output": "{\"status\":\"success\",\"agentId\":\"85170778-1652-4676-bd56-8cbf41a86d11\",\"durationMs\":61740,\"isBackground\":false}",
+  "duration": 61740,
+  "tool_use_id": "call-44a9b14d-8735-47c3-9153-8f1d69eceabf-composer_call_2H1BCZb0\nfc_e8e2f10f-3f87-9437-9c9c-f982404385d9_0",
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "postToolUse",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:49:35Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "39ca678f-b62d-4cd6-8a29-7f75fdd8476c",
+  "model": "default",
+  "text": "The command says my entire reply must be ONLY the subagent's JSON - no markdown code fences, no leading or trailing explanation.",
+  "duration_ms": 615,
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "afterAgentThought",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:49:39Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "39ca678f-b62d-4cd6-8a29-7f75fdd8476c-1-5e2e",
+  "model": "composer-2.5-fast",
+  "model_id": "composer-2.5",
+  "model_params": [
+    {
+      "id": "speed",
+      "value": "fast"
+    }
+  ],
+  "text": "The command says my entire reply must be ONLY the subagent's JSON - no markdown code fences, no leading or trailing explanation.",
+  "duration_ms": 615,
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "afterAgentThought",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:49:39Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "39ca678f-b62d-4cd6-8a29-7f75fdd8476c",
+  "model": "default",
+  "text": "Launching the cursor-model-pricing subagent to fetch official pricing.\n{\"metadata\":{\"last_updated\":\"2026-11-19\",\"currency\":\"USD\",\"source_url\":\"https://cursor.com/docs/models-and-pricing\"},\"tiers\":[{\"id\":\"free\",\"name\":\"Free\",\"category\":\"individual\",\"pricing\":{\"monthly_price_usd\":0,\"annual_price_usd_per_month\":null,\"billing_cycle\":\"monthly\"},\"usage_allowance\":{\"native_pool_multiplier\":\"limited\",\"included_third_party_credits_usd\":0,\"has_priority_access\":false},\"features\":{\"cloud_agents_enabled\":false,\"third_party_models_enabled\":false,\"bugbot_automated_reviews\":false,\"team_admin_controls\":false,\"additional_features\":[]}},{\"id\":\"plus\",\"name\":\"Plus\",\"category\":\"individual\",\"pricing\":{\"monthly_price_usd\":8,\"annual_price_usd_per_month\":6.67,\"billing_cycle\":\"monthly\"},\"usage_allowance\":{\"native_pool_multiplier\":\"1x\",\"included_third_party_credits_usd\":0,\"has_priority_access\":false},\"features\":{\"cloud_agents_enabled\":false,\"third_party_models_enabled\":false,\"bugbot_automated_reviews\":false,\"team_admin_controls\":false,\"additional_features\":[\"Grok Chat\",\"Voice\",\"Imagine\",\"Build\",\"Grok API access\"]}},{\"id\":\"premium\",\"name\":\"Premium\",\"category\":\"individual\",\"pricing\":{\"monthly_price_usd\":30,\"annual_price_usd_per_month\":25,\"billing_cycle\":\"monthly\"},\"usage_allowance\":{\"native_pool_multiplier\":\"4x\",\"included_third_party_credits_usd\":0,\"has_priority_access\":false},\"features\":{\"cloud_agents_enabled\":true,\"third_party_models_enabled\":true,\"bugbot_automated_reviews\":true,\"team_admin_controls\":false,\"additional_features\":[\"Automations\",\"Code hosting on Origin\",\"Grok Bot\"]}},{\"id\":\"super\",\"name\":\"Super\",\"category\":\"individual\",\"pricing\":{\"monthly_price_usd\":100,\"annual_price_usd_per_month\":83.33,\"billing_cycle\":\"monthly\"},\"usage_allowance\":{\"native_pool_multiplier\":\"15x\",\"included_third_party_credits_usd\":0,\"has_priority_access\":true},\"features\":{\"cloud_agents_enabled\":true,\"third_party_models_enabled\":true,\"bugbot_automated_reviews\":true,\"team_admin_controls\":false,\"additional_features\":[\"Priority model access at peak times\"]}},{\"id\":\"ultra\",\"name\":\"Ultra\",\"category\":\"individual\",\"pricing\":{\"monthly_price_usd\":200,\"annual_price_usd_per_month\":166.67,\"billing_cycle\":\"monthly\"},\"usage_allowance\":{\"native_pool_multiplier\":\"50x\",\"included_third_party_credits_usd\":0,\"has_priority_access\":true},\"features\":{\"cloud_agents_enabled\":true,\"third_party_models_enabled\":true,\"bugbot_automated_reviews\":true,\"team_admin_controls\":false,\"additional_features\":[\"Earliest access to new products and models\"]}},{\"id\":\"team-premium\",\"name\":\"Teams - Premium seat\",\"category\":\"team\",\"pricing\":{\"monthly_price_usd\":30,\"annual_price_usd_per_month\":null,\"billing_cycle\":\"monthly\"},\"usage_allowance\":{\"native_pool_multiplier\":\"4x\",\"included_third_party_credits_usd\":0,\"has_priority_access\":false},\"features\":{\"cloud_agents_enabled\":true,\"third_party_models_enabled\":true,\"bugbot_automated_reviews\":true,\"team_admin_controls\":true,\"additional_features\":[\"Centralized billing and administration\",\"Team marketplace for internal rules, skills, and plugins\",\"Usage analytics\",\"Team-wide privacy mode enforcement\",\"Custom Chat data retention\",\"SAML/OIDC SSO\"]}},{\"id\":\"team-super\",\"name\":\"Teams - Super seat\",\"category\":\"team\",\"pricing\":{\"monthly_price_usd\":100,\"annual_price_usd_per_month\":null,\"billing_cycle\":\"monthly\"},\"usage_allowance\":{\"native_pool_multiplier\":\"15x\",\"included_third_party_credits_usd\":0,\"has_priority_access\":true},\"features\":{\"cloud_agents_enabled\":true,\"third_party_models_enabled\":true,\"bugbot_automated_reviews\":true,\"team_admin_controls\":true,\"additional_features\":[\"Centralized billing and administration\",\"Team marketplace for internal rules, skills, and plugins\",\"Usage analytics\",\"Team-wide privacy mode enforcement\",\"Custom Chat data retention\",\"SAML/OIDC SSO\"]}},{\"id\":\"team-ultra\",\"name\":\"Teams - Ultra seat\",\"category\":\"team\",\"pricing\":{\"monthly_price_usd\":200,\"annual_price_usd_per_month\":null,\"billing_cycle\":\"monthly\"},\"usage_allowance\":{\"native_pool_multiplier\":\"50x\",\"included_third_party_credits_usd\":0,\"has_priority_access\":true},\"features\":{\"cloud_agents_enabled\":true,\"third_party_models_enabled\":true,\"bugbot_automated_reviews\":true,\"team_admin_controls\":true,\"additional_features\":[\"Centralized billing and administration\",\"Team marketplace for internal rules, skills, and plugins\",\"Usage analytics\",\"Team-wide privacy mode enforcement\",\"Custom Chat data retention\",\"SAML/OIDC SSO\"]}},{\"id\":\"enterprise\",\"name\":\"Enterprise\",\"category\":\"enterprise\",\"pricing\":{\"monthly_price_usd\":null,\"billing_cycle\":\"custom\"},\"usage_allowance\":{\"native_pool_multiplier\":\"pooled\"},\"features\":{\"cloud_agents_enabled\":true,\"third_party_models_enabled\":true,\"team_admin_controls\":true,\"additional_features\":[\"Pooled usage across Grok and Cursor\",\"Invoicing\",\"SCIM\",\"Granular spend controls\",\"Advanced security controls\"]}}],\"metered_models\":[{\"model_id\":\"Grok 4.7\",\"provider\":\"Cursor\",\"is_native_pool\":true,\"cost_per_1m_input_tokens\":2,\"cost_per_1m_cache_read_tokens\":0.5,\"cost_per_1m_output_tokens\":6},{\"model_id\":\"Grok 4.7 (Fast)\",\"provider\":\"Cursor\",\"is_native_pool\":true,\"cost_per_1m_input_tokens\":4,\"cost_per_1m_cache_read_tokens\":1,\"cost_per_1m_output_tokens\":12},{\"model_id\":\"Grok 4.7 500k\",\"provider\":\"Cursor\",\"is_native_pool\":true,\"cost_per_1m_input_tokens\":4,\"cost_per_1m_cache_read_tokens\":1,\"cost_per_1m_output_tokens\":12},{\"model_id\":\"Grok 4.7 500k (Fast)\",\"provider\":\"Cursor\",\"is_native_pool\":true,\"cost_per_1m_input_tokens\":6,\"cost_per_1m_cache_read_tokens\":1.5,\"cost_per_1m_output_tokens\":18},{\"model_id\":\"Grok 4.6\",\"provider\":\"Cursor\",\"is_native_pool\":true,\"cost_per_1m_input_tokens\":2,\"cost_per_1m_cache_read_tokens\":0.5,\"cost_per_1m_output_tokens\":6},{\"model_id\":\"Grok 4.6 (Fast)\",\"provider\":\"Cursor\",\"is_native_pool\":true,\"cost_per_1m_input_tokens\":4,\"cost_per_1m_cache_read_tokens\":1,\"cost_per_1m_output_tokens\":12},{\"model_id\":\"Grok 4.5\",\"provider\":\"Cursor\",\"is_native_pool\":true,\"cost_per_1m_input_tokens\":2,\"cost_per_1m_cache_read_tokens\":0.5,\"cost_per_1m_output_tokens\":6},{\"model_id\":\"Grok 4.5 (Fast)\",\"provider\":\"Cursor\",\"is_native_pool\":true,\"cost_per_1m_input_tokens\":4,\"cost_per_1m_cache_read_tokens\":1,\"cost_per_1m_output_tokens\":18},{\"model_id\":\"Composer 2.5\",\"provider\":\"Cursor\",\"is_native_pool\":true,\"cost_per_1m_input_tokens\":0.5,\"cost_per_1m_cache_read_tokens\":0.2,\"cost_per_1m_output_tokens\":2.5},{\"model_id\":\"Composer 2.5 (Fast)\",\"provider\":\"Cursor\",\"is_native_pool\":true,\"cost_per_1m_input_tokens\":3,\"cost_per_1m_cache_read_tokens\":0.5,\"cost_per_1m_output_tokens\":15},{\"model_id\":\"Claude 4 Sonnet\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":3,\"cost_per_1m_cache_read_tokens\":0.3,\"cost_per_1m_output_tokens\":15},{\"model_id\":\"Claude 4 Sonnet 1M\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":6,\"cost_per_1m_cache_read_tokens\":0.6,\"cost_per_1m_output_tokens\":22.5},{\"model_id\":\"Claude 4.5 Haiku\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1,\"cost_per_1m_cache_read_tokens\":0.1,\"cost_per_1m_output_tokens\":5},{\"model_id\":\"Claude 4.5 Opus\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":5,\"cost_per_1m_cache_read_tokens\":0.5,\"cost_per_1m_output_tokens\":25},{\"model_id\":\"Claude 4.5 Sonnet\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":3,\"cost_per_1m_cache_read_tokens\":0.3,\"cost_per_1m_output_tokens\":15},{\"model_id\":\"Claude 4.6 Opus\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":5,\"cost_per_1m_cache_read_tokens\":0.5,\"cost_per_1m_output_tokens\":25},{\"model_id\":\"Claude 4.6 Sonnet\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":3,\"cost_per_1m_cache_read_tokens\":0.3,\"cost_per_1m_output_tokens\":15},{\"model_id\":\"Claude 4.7 Opus\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":5,\"cost_per_1m_cache_read_tokens\":0.5,\"cost_per_1m_output_tokens\":25},{\"model_id\":\"Claude Fable 5\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":10,\"cost_per_1m_cache_read_tokens\":1,\"cost_per_1m_output_tokens\":50},{\"model_id\":\"Claude Fable 5.1\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":10,\"cost_per_1m_cache_read_tokens\":0.25,\"cost_per_1m_output_tokens\":50},{\"model_id\":\"Claude Fable 5.2\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":8,\"cost_per_1m_cache_read_tokens\":0.2,\"cost_per_1m_output_tokens\":40},{\"model_id\":\"Claude Haiku 5.5\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.1,\"cost_per_1m_cache_read_tokens\":0.01,\"cost_per_1m_output_tokens\":0.5},{\"model_id\":\"Claude Opus 4.7 (fast mode)\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":30,\"cost_per_1m_cache_read_tokens\":3,\"cost_per_1m_output_tokens\":150},{\"model_id\":\"Claude Opus 4.8\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":5,\"cost_per_1m_cache_read_tokens\":0.5,\"cost_per_1m_output_tokens\":25},{\"model_id\":\"Claude Opus 5\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":5,\"cost_per_1m_cache_read_tokens\":0.5,\"cost_per_1m_output_tokens\":25},{\"model_id\":\"Claude Opus 5.5\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":4,\"cost_per_1m_cache_read_tokens\":0.2,\"cost_per_1m_output_tokens\":20},{\"model_id\":\"Claude Sonnet 5\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":2,\"cost_per_1m_cache_read_tokens\":0.2,\"cost_per_1m_output_tokens\":10},{\"model_id\":\"Claude Sonnet 5.5\",\"provider\":\"Anthropic\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":2,\"cost_per_1m_cache_read_tokens\":0.1,\"cost_per_1m_output_tokens\":10},{\"model_id\":\"DeepSeek V4.1 Flash 1017\",\"provider\":\"DeepSeek\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.3,\"cost_per_1m_cache_read_tokens\":0.006,\"cost_per_1m_output_tokens\":1.2},{\"model_id\":\"Gemini 2.5 Flash\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.3,\"cost_per_1m_cache_read_tokens\":0.03,\"cost_per_1m_output_tokens\":2.5},{\"model_id\":\"Gemini 3 Flash\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.5,\"cost_per_1m_cache_read_tokens\":0.05,\"cost_per_1m_output_tokens\":3},{\"model_id\":\"Gemini 3 Pro\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":2,\"cost_per_1m_cache_read_tokens\":0.2,\"cost_per_1m_output_tokens\":12},{\"model_id\":\"Gemini 3 Pro Image Preview\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":2,\"cost_per_1m_cache_read_tokens\":0.2,\"cost_per_1m_output_tokens\":12},{\"model_id\":\"Gemini 3.1 Pro\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":2,\"cost_per_1m_cache_read_tokens\":0.2,\"cost_per_1m_output_tokens\":12},{\"model_id\":\"Gemini 3.5 Flash\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.5,\"cost_per_1m_cache_read_tokens\":0.15,\"cost_per_1m_output_tokens\":9},{\"model_id\":\"Gemini 3.5 Flash Lite\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.3,\"cost_per_1m_cache_read_tokens\":0.03,\"cost_per_1m_output_tokens\":2.5},{\"model_id\":\"Gemini 3.6 Flash\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.5,\"cost_per_1m_cache_read_tokens\":0.15,\"cost_per_1m_output_tokens\":7.5},{\"model_id\":\"Gemini 3.7 Flash\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.75,\"cost_per_1m_cache_read_tokens\":0.075,\"cost_per_1m_output_tokens\":3.75},{\"model_id\":\"Gemini 3.8 Flash\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.75,\"cost_per_1m_cache_read_tokens\":0.075,\"cost_per_1m_output_tokens\":3.75},{\"model_id\":\"Gemini 4 Argon\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":2,\"cost_per_1m_cache_read_tokens\":0.1,\"cost_per_1m_output_tokens\":10},{\"model_id\":\"Gemini 4 Carbon\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":2,\"cost_per_1m_cache_read_tokens\":0.1,\"cost_per_1m_output_tokens\":10},{\"model_id\":\"Gemini 4 Hydrogen\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.5,\"cost_per_1m_cache_read_tokens\":0.075,\"cost_per_1m_output_tokens\":7.5},{\"model_id\":\"Gemini 4 Neon\",\"provider\":\"Google\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":3,\"cost_per_1m_cache_read_tokens\":0.15,\"cost_per_1m_output_tokens\":15},{\"model_id\":\"GLM 5.2\",\"provider\":\"Z.ai\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.4,\"cost_per_1m_cache_read_tokens\":0.26,\"cost_per_1m_output_tokens\":4.4},{\"model_id\":\"GLM 5.3\",\"provider\":\"Z.ai\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.4,\"cost_per_1m_cache_read_tokens\":0.26,\"cost_per_1m_output_tokens\":4.4},{\"model_id\":\"GLM 5.3 Flash\",\"provider\":\"Z.ai\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.15,\"cost_per_1m_cache_read_tokens\":0.029,\"cost_per_1m_output_tokens\":0.5},{\"model_id\":\"GPT-5\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.25,\"cost_per_1m_cache_read_tokens\":0.125,\"cost_per_1m_output_tokens\":10},{\"model_id\":\"GPT-5 Fast\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":2.5,\"cost_per_1m_cache_read_tokens\":0.25,\"cost_per_1m_output_tokens\":20},{\"model_id\":\"GPT-5 Mini\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.25,\"cost_per_1m_cache_read_tokens\":0.025,\"cost_per_1m_output_tokens\":2},{\"model_id\":\"GPT-5-Codex\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.25,\"cost_per_1m_cache_read_tokens\":0.125,\"cost_per_1m_output_tokens\":10},{\"model_id\":\"GPT-5.1 Codex\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.25,\"cost_per_1m_cache_read_tokens\":0.125,\"cost_per_1m_output_tokens\":10},{\"model_id\":\"GPT-5.1 Codex Max\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.25,\"cost_per_1m_cache_read_tokens\":0.125,\"cost_per_1m_output_tokens\":10},{\"model_id\":\"GPT-5.1 Codex Mini\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.25,\"cost_per_1m_cache_read_tokens\":0.025,\"cost_per_1m_output_tokens\":2},{\"model_id\":\"GPT-5.2\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.75,\"cost_per_1m_cache_read_tokens\":0.175,\"cost_per_1m_output_tokens\":14},{\"model_id\":\"GPT-5.2 Codex\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.75,\"cost_per_1m_cache_read_tokens\":0.175,\"cost_per_1m_output_tokens\":14},{\"model_id\":\"GPT-5.3 Codex\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.75,\"cost_per_1m_cache_read_tokens\":0.175,\"cost_per_1m_output_tokens\":14},{\"model_id\":\"GPT-5.4\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":2.5,\"cost_per_1m_cache_read_tokens\":0.25,\"cost_per_1m_output_tokens\":15},{\"model_id\":\"GPT-5.4 Mini\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.75,\"cost_per_1m_cache_read_tokens\":0.075,\"cost_per_1m_output_tokens\":4.5},{\"model_id\":\"GPT-5.4 Nano\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.2,\"cost_per_1m_cache_read_tokens\":0.02,\"cost_per_1m_output_tokens\":1.25},{\"model_id\":\"GPT-5.5\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":5,\"cost_per_1m_cache_read_tokens\":0.5,\"cost_per_1m_output_tokens\":30},{\"model_id\":\"GPT-5.6 Luna\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.2,\"cost_per_1m_cache_read_tokens\":0.02,\"cost_per_1m_output_tokens\":1.2},{\"model_id\":\"GPT-5.6 Sol\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":4,\"cost_per_1m_cache_read_tokens\":0.4,\"cost_per_1m_output_tokens\":20},{\"model_id\":\"GPT-5.6 Terra\",\"provider\":\"OpenAI\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":2,\"cost_per_1m_cache_read_tokens\":0.2,\"cost_per_1m_output_tokens\":12},{\"model_id\":\"Kimi K2.7 Code\",\"provider\":\"Moonshot\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":0.95,\"cost_per_1m_cache_read_tokens\":0.19,\"cost_per_1m_output_tokens\":4},{\"model_id\":\"Kimi K3\",\"provider\":\"Moonshot\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":3,\"cost_per_1m_cache_read_tokens\":0.3,\"cost_per_1m_output_tokens\":15},{\"model_id\":\"Muse Spark 1.3\",\"provider\":\"Meta\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":1.25,\"cost_per_1m_cache_read_tokens\":0.15,\"cost_per_1m_output_tokens\":4.25},{\"model_id\":\"Muse Wonder\",\"provider\":\"Meta\",\"is_native_pool\":false,\"cost_per_1m_input_tokens\":4,\"cost_per_1m_cache_read_tokens\":0.2,\"cost_per_1m_output_tokens\":20}]}",
+  "input_tokens": 28143,
+  "output_tokens": 5265,
+  "cache_read_tokens": 10496,
+  "cache_write_tokens": 0,
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "afterAgentResponse",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:49:54Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "39ca678f-b62d-4cd6-8a29-7f75fdd8476c",
+  "model": "default",
+  "status": "completed",
+  "loop_count": 0,
+  "input_tokens": 28143,
+  "output_tokens": 5265,
+  "cache_read_tokens": 10496,
+  "cache_write_tokens": 0,
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "stop",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:49:54Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "dbfa3a4a-527b-452a-b301-647082bef749",
+  "model": "default",
+  "tool_name": "Shell",
+  "tool_input": {
+    "command": "cat ~/.cursor/hooks.json",
+    "cwd": ""
+  },
+  "tool_use_id": "a27648ec-46b7-420e-8a93-74741a693ee2",
+  "cwd": "",
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "preToolUse",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:55:53Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "dbfa3a4a-527b-452a-b301-647082bef749",
+  "model": "default",
+  "tool_name": "Shell",
+  "tool_input": {
+    "command": "cat ~/.cursor/hooks.json",
+    "cwd": ""
+  },
+  "tool_use_id": "eb656cef-2992-4d57-b439-6101ccbc9569",
+  "cwd": "",
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "preToolUse",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:55:54Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "dbfa3a4a-527b-452a-b301-647082bef749",
+  "model": "default",
+  "command": "cat ~/.cursor/hooks.json",
+  "cwd": "",
+  "sandbox": false,
+  "tool_use_id": "a27648ec-46b7-420e-8a93-74741a693ee2",
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "beforeShellExecution",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:55:54Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "dbfa3a4a-527b-452a-b301-647082bef749",
+  "model": "default",
+  "command": "cat ~/.cursor/hooks.json",
+  "cwd": "",
+  "sandbox": false,
+  "tool_use_id": "eb656cef-2992-4d57-b439-6101ccbc9569",
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "beforeShellExecution",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:55:54Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "dbfa3a4a-527b-452a-b301-647082bef749",
+  "model": "default",
+  "command": "cat ~/.cursor/hooks.json",
+  "output": "{\n  \"version\": 1,\n  \"hooks\": {\n    \"sessionStart\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],\n    \"sessionEnd\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"preToolUse\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],\n    \"postToolUse\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"postToolUseFailure\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"subagentStart\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],\n    \"subagentStop\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"beforeShellExecution\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],    \n    \"afterShellExecution\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"beforeMCPExecution\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],\n    \"afterMCPExecution\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"beforeReadFile\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],\n    \"afterFileEdit\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"beforeSubmitPrompt\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/before-submit-prompt.sh\"\n      }\n    ],\n    \"preCompact\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],    \n    \"stop\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"afterAgentResponse\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"afterAgentThought\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"beforeTabFileRead\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      }\n    ],\n    \"afterTabFileEdit\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      }\n    ],\n    \"workspaceOpen\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ]\n  }\n}",
+  "duration": 1879.164,
+  "sandbox": false,
+  "tool_use_id": "eb656cef-2992-4d57-b439-6101ccbc9569",
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "afterShellExecution",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:55:57Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "dbfa3a4a-527b-452a-b301-647082bef749",
+  "model": "default",
+  "command": "cat ~/.cursor/hooks.json",
+  "output": "{\n  \"version\": 1,\n  \"hooks\": {\n    \"sessionStart\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],\n    \"sessionEnd\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"preToolUse\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],\n    \"postToolUse\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"postToolUseFailure\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"subagentStart\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],\n    \"subagentStop\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"beforeShellExecution\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],    \n    \"afterShellExecution\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"beforeMCPExecution\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],\n    \"afterMCPExecution\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"beforeReadFile\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/always-allow.sh\"\n      }\n    ],\n    \"afterFileEdit\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"beforeSubmitPrompt\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/before-submit-prompt.sh\"\n      }\n    ],\n    \"preCompact\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],    \n    \"stop\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"afterAgentResponse\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"afterAgentThought\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ],\n    \"beforeTabFileRead\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      }\n    ],\n    \"afterTabFileEdit\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      }\n    ],\n    \"workspaceOpen\": [\n      {\n        \"command\": \"/root/.local/bin/otel-hook --cursor\"\n      },\n      {\n        \"command\": \"/root/.cursor/hooks/audit.sh\"\n      }\n    ]\n  }\n}",
+  "duration": 2484.206,
+  "sandbox": false,
+  "tool_use_id": "a27648ec-46b7-420e-8a93-74741a693ee2",
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "afterShellExecution",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:55:57Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "dbfa3a4a-527b-452a-b301-647082bef749",
+  "model": "default",
+  "tool_name": "Shell",
+  "tool_input": {
+    "command": "cat ~/.cursor/hooks.json",
+    "cwd": ""
+  },
+  "tool_output": "{\"output\":\"{\\n  \\\"version\\\": 1,\\n  \\\"hooks\\\": {\\n    \\\"sessionStart\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],\\n    \\\"sessionEnd\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"preToolUse\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],\\n    \\\"postToolUse\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"postToolUseFailure\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"subagentStart\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],\\n    \\\"subagentStop\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"beforeShellExecution\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],    \\n    \\\"afterShellExecution\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"beforeMCPExecution\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],\\n    \\\"afterMCPExecution\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"beforeReadFile\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],\\n    \\\"afterFileEdit\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"beforeSubmitPrompt\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/before-submit-prompt.sh\\\"\\n      }\\n    ],\\n    \\\"preCompact\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],    \\n    \\\"stop\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"afterAgentResponse\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"afterAgentThought\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"beforeTabFileRead\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      }\\n    ],\\n    \\\"afterTabFileEdit\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      }\\n    ],\\n    \\\"workspaceOpen\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ]\\n  }\\n}\",\"exitCode\":0}",
+  "duration": 1879.164,
+  "tool_use_id": "eb656cef-2992-4d57-b439-6101ccbc9569",
+  "cwd": "",
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "postToolUse",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:55:58Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "dbfa3a4a-527b-452a-b301-647082bef749",
+  "model": "default",
+  "tool_name": "Shell",
+  "tool_input": {
+    "command": "cat ~/.cursor/hooks.json",
+    "cwd": ""
+  },
+  "tool_output": "{\"output\":\"{\\n  \\\"version\\\": 1,\\n  \\\"hooks\\\": {\\n    \\\"sessionStart\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],\\n    \\\"sessionEnd\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"preToolUse\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],\\n    \\\"postToolUse\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"postToolUseFailure\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"subagentStart\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],\\n    \\\"subagentStop\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"beforeShellExecution\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],    \\n    \\\"afterShellExecution\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"beforeMCPExecution\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],\\n    \\\"afterMCPExecution\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"beforeReadFile\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/always-allow.sh\\\"\\n      }\\n    ],\\n    \\\"afterFileEdit\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"beforeSubmitPrompt\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/before-submit-prompt.sh\\\"\\n      }\\n    ],\\n    \\\"preCompact\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],    \\n    \\\"stop\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"afterAgentResponse\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"afterAgentThought\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ],\\n    \\\"beforeTabFileRead\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      }\\n    ],\\n    \\\"afterTabFileEdit\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      }\\n    ],\\n    \\\"workspaceOpen\\\": [\\n      {\\n        \\\"command\\\": \\\"/root/.local/bin/otel-hook --cursor\\\"\\n      },\\n      {\\n        \\\"command\\\": \\\"/root/.cursor/hooks/audit.sh\\\"\\n      }\\n    ]\\n  }\\n}\",\"exitCode\":0}",
+  "duration": 2484.206,
+  "tool_use_id": "a27648ec-46b7-420e-8a93-74741a693ee2",
+  "cwd": "",
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "postToolUse",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:55:58Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "dbfa3a4a-527b-452a-b301-647082bef749",
+  "model": "default",
+  "status": "completed",
+  "loop_count": 0,
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "stop",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:55:59Z"
+}
+{
+  "conversation_id": "842096ff-601b-4214-b264-0215b615375b",
+  "generation_id": "dbfa3a4a-527b-452a-b301-647082bef749",
+  "model": "default",
+  "text": "",
+  "session_id": "842096ff-601b-4214-b264-0215b615375b",
+  "hook_event_name": "afterAgentResponse",
+  "cursor_version": "2026.11.13-eacade1",
+  "workspace_roots": [
+    "/my-project"
+  ],
+  "user_email": "kwonghung.yip@nttdata.com",
+  "transcript_path": "/root/.cursor/projects/my-project/agent-transcripts/842096ff-601b-4214-b264-0215b615375b/842096ff-601b-4214-b264-0215b615375b.jsonl",
+  "_logged_at": "2026-11-19T15:55:59Z"
+}

@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "preToolUse": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "postToolUseFailure": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "beforeMCPExecution": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "afterMCPExecution": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "beforeReadFile": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "afterTabFileEdit": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "subagentStart": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "subagentStop": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "afterAgentResponse": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "afterAgentThought": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "stop": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "preCompact": [
+      {
+        "command": "/root/.cursor/hooks/cursorscope-forward.sh"
+      }, { "command": "/root/.cursor/hooks/audit.sh" }
+    ]
+  }
+}

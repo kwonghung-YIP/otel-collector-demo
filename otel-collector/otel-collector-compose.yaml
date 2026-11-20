@@ -1,0 +1,65 @@
+services:
+  otel-collector:
+    image: otel/opentelemetry-collector:0.165.0
+    ports:
+      - 1888:1888 # pprof extension
+      - 8888:8888 # Prometheus metrics exposed by the Collector
+      - 8889:8889 # Prometheus exporter metrics
+      - 13133:13133 # health_check extension
+      - 4317:4317 # OTLP gRPC receiver
+      - 4318:4318 # OTLP http receiver
+      - 55679:55679 # zpages extension
+    volumes:  
+      #- ./config/debug.yaml:/etc/otelcol/config.yaml
+      - ./config/forward-to-langfuse.yaml:/etc/otelcol/config.yaml
+      - ./output:/output:rw
+    environment:
+      LANGFUSE_BASIC_AUTH: ${LANGFUSE_BASIC_AUTH:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - langfuse-demo
+      - public-internet
+
+  gen-traces:
+    build:
+      context: ./telemetrygen
+    command: traces --otlp-endpoint otel-collector:4317 --otlp-insecure --duration inf --interval 1s
+    profiles:
+      - telemetrygen
+      - gen-traces
+    networks:
+      - public-internet
+   
+  gen-metrics:
+    build:
+      context: ./telemetrygen
+    command: metrics --otlp-endpoint otel-collector:4317 --otlp-insecure --duration inf --batch false
+    profiles:
+      - telemetrygen
+      - gen-metrics
+    networks:
+      - public-internet
+
+  netshoot:
+    image: nicolaka/netshoot
+    container_name: netshoot
+    command: sleep infinity
+    environment:
+      LANGFUSE_PUBLIC_KEY: ${LANGFUSE_PUBLIC_KEY:-}
+      LANGFUSE_SECRET_KEY: ${LANGFUSE_SECRET_KEY:-}
+      LANGFUSE_HOST: http://langfuse-web:3000
+    profiles:
+      - netshoot
+    networks:
+      - langfuse-demo
+      - public-internet
+
+networks:
+  langfuse-demo:
+    external: true
+  public-internet:
+    name: public-internet
+
+
+    

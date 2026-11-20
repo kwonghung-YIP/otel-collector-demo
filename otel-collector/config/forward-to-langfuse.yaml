@@ -1,0 +1,93 @@
+extensions:
+  zpages:
+    endpoint: 0.0.0.0:55679
+  health_check:
+    endpoint: 0.0.0.0:13133
+  #bearertokenauth:
+  #  token: "my-demo-token"
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+        #auth:
+        #  authenticator: bearertokenauth
+      http:
+        endpoint: 0.0.0.0:4318
+
+processors:
+  filter/non_target_users:
+    error_mode: propagate
+    trace_conditions:
+      - >-
+        span.attributes["user.email"] != "kwonghung.yip@nttdata.com"
+        and span.attributes["user.email"] != "user1@abc.com"
+        and span.attributes["user.email"] != "user2@abc.com"
+          
+
+exporters:
+  debug:
+    verbosity: detailed # basic/normal/detailed
+
+  file/logs-log:
+    create_directory: true
+    path: /output/logs.log
+    format: json
+
+  file/metrics-log:
+    create_directory: true
+    path: /output/metrics.log
+    format: json
+
+  file/traces-log:
+    create_directory: true
+    path: /output/traces.log
+    format: json
+
+  otlphttp/langfuse:
+    endpoint: http://langfuse-web:3000/api/public/otel  # Or your self-hosted base URL + /api/public/otel
+    #endpoint: http://host.docker.internal:3000/api/public/otel
+    #traces_endpoint: http://langfuse-web:3000/api/public/otel/v1/traces
+    headers:
+      Authorization: "Basic ${env:LANGFUSE_BASIC_AUTH:-}" # Previously encoded API keys
+      #Content-Type: application/json
+      x-langfuse-ingestion-version: "4"
+    #tls:
+    #  insecure: true
+    #encoding: json
+    #retry_on_failure:
+    #  enabled: true
+
+service:
+  extensions:
+    - zpages
+    - health_check
+    #- bearertokenauth]
+
+  telemetry:
+    metrics:
+      level: detailed # none/basic/normal/detailed
+      readers:
+        - pull:
+            exporter:
+              prometheus:
+                host: "0.0.0.0"
+                port: 8888
+    logs:
+      level: debug
+      development: true
+      encoding: "json"
+
+
+  pipelines:
+    logs:
+      receivers: [otlp]
+      exporters: [debug, file/logs-log]
+    metrics:
+      receivers: [otlp]
+      exporters: [debug, file/metrics-log]
+    traces:
+      receivers: [otlp]
+      processors: [filter/non_target_users]
+      exporters: [debug, file/traces-log, otlphttp/langfuse]

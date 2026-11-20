@@ -1,0 +1,56 @@
+extensions:
+  zpages:
+    endpoint: 0.0.0.0:55679
+  health_check:
+    endpoint: 0.0.0.0:13133
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+
+exporters:
+  debug:
+    verbosity: detailed # basic/normal/detailed
+
+  file/logs-log:
+    create_directory: true
+    path: /output/logs.log
+    format: json
+
+  file/metrics-log:
+    create_directory: true
+    path: /output/metrics.log
+    format: json
+
+  file/traces-log:
+    create_directory: true
+    path: /output/traces.log
+    format: json
+
+service:
+  extensions: [zpages, health_check]
+
+  telemetry:
+    metrics:
+      level: detailed # none/basic/normal/detailed
+      readers:
+        - pull:
+            exporter:
+              prometheus:
+                host: "0.0.0.0"
+                port: 8888
+  
+  pipelines:
+    logs:
+      receivers: [otlp]
+      exporters: [debug, file/logs-log]
+    metrics:
+      receivers: [otlp]
+      exporters: [debug, file/metrics-log]
+    traces:
+      receivers: [otlp]
+      exporters: [debug, file/traces-log]

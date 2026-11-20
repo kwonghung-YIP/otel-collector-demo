@@ -1,0 +1,49 @@
+{
+    "view": "observations",
+    "fromTimestamp": "2026-11-16T00:00:00.000Z",
+    "toTimestamp": "2026-11-17T00:00:00.000Z",
+    "metrics":[
+        {
+            "measure": "inputTokens",
+            "aggregation": "sum"
+        },
+        {
+            "measure": "outputTokens",
+            "aggregation": "sum"
+        },        
+        {
+            "measure": "totalTokens",
+            "aggregation": "sum"
+        },
+        {
+            "measure": "totalCost",
+            "aggregation": "sum"
+        }
+    ],
+    "filters": [
+        {
+            "column": "metadata",
+            "key": "agent-provider",
+            "operator": "=",
+            "value": "ABC Consultant Ltd.",
+            "type": "stringObject"
+        }
+    ],
+    "dimensions": [
+        {
+            "field": "userId"
+        },
+        {
+            "field": "traceName"
+        }
+    ],
+    "orderBy": [
+        {
+            "field": "sum_totalTokens",
+            "direction": "desc"
+        }
+    ],
+    "config": {
+        "row_limit": 500
+    }
+}

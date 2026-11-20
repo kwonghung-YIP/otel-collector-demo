@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/always-allow.sh"
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "preToolUse": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/always-allow.sh"
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "postToolUseFailure": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "subagentStart": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/always-allow.sh"
+      }
+    ],
+    "subagentStop": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/always-allow.sh"
+      }
+    ],    
+    "afterShellExecution": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "beforeMCPExecution": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/always-allow.sh"
+      }
+    ],
+    "afterMCPExecution": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "beforeReadFile": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/always-allow.sh"
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/before-submit-prompt.sh"
+      }
+    ],
+    "preCompact": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],    
+    "stop": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "afterAgentResponse": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "afterAgentThought": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ],
+    "beforeTabFileRead": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      }
+    ],
+    "afterTabFileEdit": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      }
+    ],
+    "workspaceOpen": [
+      {
+        "command": "/root/.local/bin/otel-hook --cursor"
+      },
+      {
+        "command": "/root/.cursor/hooks/audit.sh"
+      }
+    ]
+  }
+}
