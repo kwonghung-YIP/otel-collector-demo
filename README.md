@@ -5,6 +5,8 @@
 - [GitHub - LangGuard AI - cursor-otel-hook](https://github.com/LangGuard-AI/cursor-otel-hook)
 - [GitHub - LangFuse - cursor-observability-plugin](https://github.com/langfuse/cursor-observability-plugin)
 - [Cursor Docs - Hook References](https://cursor.com/docs/hooks)
+- [Cursor Docs - OpenTelemetry Export Overview](https://cursor.com/docs/enterprise/opentelemetry-export)
+- [Cursor Docs - OpenTelemetry Export Wire References](https://cursor.com/docs/enterprise/opentelemetry-export/wire)
 
 ## OpenTelemetry References
 
