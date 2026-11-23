@@ -19,4 +19,5 @@ jq '
 ' $JSON_FILE_NAME | \
 curl -i -X POST "http://localhost:4318/v1/traces" \
   -H "Content-Type: application/json" \
+  -H "Authorization: Bearer user1-token" \
   -d @-

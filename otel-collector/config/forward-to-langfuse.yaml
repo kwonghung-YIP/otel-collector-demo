@@ -3,18 +3,34 @@ extensions:
     endpoint: 0.0.0.0:55679
   health_check:
     endpoint: 0.0.0.0:13133
-  #bearertokenauth:
-  #  token: "my-demo-token"
+  bearertokenauth:
+    # define either one token/tokens/filename
+    #token: "my-demo-token"
+    #tokens:
+    #  - "other_token1"
+    #  - "other_token2"
+    filename: "/etc/otelcol-contrib/bearer-tokens"
 
 receivers:
+  # Collect own metrics
+  prometheus:
+    config:
+      scrape_configs:
+      - job_name: 'otel-collector'
+        scrape_interval: 10s
+        static_configs:
+        - targets: ['0.0.0.0:8888']
+
   otlp:
     protocols:
       grpc:
         endpoint: 0.0.0.0:4317
-        #auth:
-        #  authenticator: bearertokenauth
+        auth:
+          authenticator: bearertokenauth
       http:
         endpoint: 0.0.0.0:4318
+        auth:
+          authenticator: bearertokenauth
 
 processors:
   filter/non_target_users:
@@ -63,7 +79,7 @@ service:
   extensions:
     - zpages
     - health_check
-    #- bearertokenauth]
+    - bearertokenauth
 
   telemetry:
     metrics:
@@ -74,6 +90,11 @@ service:
               prometheus:
                 host: "0.0.0.0"
                 port: 8888
+                without_scope_info: true
+                without_type_suffix: true
+                without_units: true
+                with_resource_constant_labels:
+                  included: [ ]
     logs:
       level: debug
       development: true
@@ -85,9 +106,14 @@ service:
       receivers: [otlp]
       exporters: [debug, file/logs-log]
     metrics:
-      receivers: [otlp]
+      receivers: 
+        - otlp
+        #- prometheus
       exporters: [debug, file/metrics-log]
     traces:
       receivers: [otlp]
       processors: [filter/non_target_users]
-      exporters: [debug, file/traces-log, otlphttp/langfuse]
+      exporters: 
+        - debug
+        - file/traces-log
+        - otlphttp/langfuse

@@ -55,7 +55,12 @@ services:
     command: /bin/bash -c "sleep infinity"
     environment:
       CURSOR_API_KEY: ${CURSOR_API_KEY:-}
+      #MY_OTEL_AUTH_TOKEN: user1-token
       IDE_OTEL_HOOK_HOME: /root/.local/share/opentelemetry-hooks
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://otel-collector:4317"
+      OTEL_EXPORTER_OTLP_PROTOCOL: "grpc"
+      # header key must be in lowercase, and values is url encoded
+      OTEL_EXPORTER_OTLP_HEADERS: "authorization=Bearer%20${MY_OTEL_AUTH_TOKEN:-}"
       IDE_OTEL_CAPTURE_TOOL_INPUT_CONTENT: true
       IDE_OTEL_CAPTURE_TEXT: true
       IDE_OTEL_CAPTURE_CONVERSATION_CONTENT: true

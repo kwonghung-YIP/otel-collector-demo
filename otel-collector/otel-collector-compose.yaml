@@ -1,6 +1,7 @@
 services:
   otel-collector:
-    image: otel/opentelemetry-collector:0.165.0
+    image: otel/opentelemetry-collector-contrib:0.165.0
+
     ports:
       - 1888:1888 # pprof extension
       - 8888:8888 # Prometheus metrics exposed by the Collector
@@ -9,9 +10,13 @@ services:
       - 4317:4317 # OTLP gRPC receiver
       - 4318:4318 # OTLP http receiver
       - 55679:55679 # zpages extension
-    volumes:  
+    volumes:
+      # Config path for different images:
+      #  - otel/opentelemetry-collector         -> /etc/otelcol/config.yaml
+      #  - otel/opentelemetry-collector-contrib -> /etc/otelcol-contrib/config.yaml
+      #
       #- ./config/debug.yaml:/etc/otelcol/config.yaml
-      - ./config/forward-to-langfuse.yaml:/etc/otelcol/config.yaml
+      - ./config/forward-to-langfuse.yaml:/etc/otelcol-contrib/config.yaml
       - ./output:/output:rw
     environment:
       LANGFUSE_BASIC_AUTH: ${LANGFUSE_BASIC_AUTH:-}
@@ -20,6 +25,9 @@ services:
     networks:
       - langfuse-demo
       - public-internet
+    configs:
+      - source: otel-collector-bearer-tokens
+        target: /etc/otelcol-contrib/bearer-tokens
 
   gen-traces:
     build:
@@ -61,5 +69,10 @@ networks:
   public-internet:
     name: public-internet
 
-
+configs:
+  otel-collector-bearer-tokens:
+    content: |
+      user1-token # token for user1
+      user2-token # token for user2
+      Pk1XTWr0GUlV9CwiM8yKXcUl94wegqBMnS9JrPsnMi0= # random token openssl rand -base64 32
     
